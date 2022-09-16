@@ -1,1 +1,1 @@
-web: gunicorn myproject.wsgi
+web gunicorn amit_portfolio.wsgi:application --log-file -
