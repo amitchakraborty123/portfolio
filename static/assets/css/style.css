@@ -1,0 +1,501 @@
+/*
+* =========================================================================
+* Template Name: Amit Potfolio 
+* Theme URL : #
+* Author Name: Amit Chakraborty
+* Author URI: #
+* Description: This is a personal portfolio template
+* Tags: amit, portfolio, amit portfolio, resume, amit profile, cv
+* =========================================================================
+*/
+
+/*
+|--------------------------------------------------------------------------
+| Default style
+|--------------------------------------------------------------------------
+*/
+html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#about .section-intro ul li, #resume .resume-item ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+ul li i, #about i {
+    color: #149ddd;
+    padding: 5px;
+}
+
+#about, #fact, #skill, #resume, #portfolio, #service, #testimonial, #contact, #certification {
+    padding: 60px 0px 60px 0px;
+}
+
+.section-intro h2 {
+    color: #400000;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-intro p {
+    color: #400000;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr {
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    background-color: #149ddd;
+    border-radius: 5px;
+    margin: 8px 0px 8px 4px;
+}
+
+hr.small-hr {
+    width: 10px;
+}
+
+
+/*.................  Scrollbar .........................*/
+html {
+    --scrollbarBG: rgb(65, 70, 80);
+    --thumbBG: #040B14;
+}
+body::-webkit-scrollbar {
+    width: 7px;
+}
+#body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 4px;
+    border: 2px solid var(--scrollbarBG);
+}
+/*................  End Scrollbar .......................*/
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Header
+|--------------------------------------------------------------------------
+*/
+#header header {
+    height: 100vh;
+    position: fixed;
+    background-color: #040B14;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    width: 25%;
+}
+
+#header .profile img {
+    border: 8px solid #2c2f3f;
+}
+
+#header .profile h1 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+#header .profile .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    border: 1px solid #212431;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s ease-in-out;
+}
+
+#header .profile .social-links a:hover {
+    background: #000000;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 7px #ccc;
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a img {
+    margin: 0px !important;
+    height: 27px !important;
+    width: 27px !important;
+}
+
+nav ul li a {
+    margin-bottom: 8px;
+    display: flex;
+    padding: 9px 9px 9px 0px;
+}
+
+nav ul li a span {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    color: #a8a9b4;
+    padding-left: 9px;
+}
+
+nav ul li a:hover, nav ul li a:hover >span {
+    color: #ffffff;
+}
+
+/* For mobile view */
+#header nav.mobile-navigation-start {
+    background: #00A651;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+}
+#header nav.mobile-navigation-start .mbl-sm-nav ul {
+    background-color: #040B14;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 99vh;
+    width: 100%;
+    padding-bottom: 90px;
+}
+#header nav.mobile-navigation-start .mbl-sm-nav ul li.list-border {
+    border-bottom: 1px solid #000000;
+}
+.bar1, .bar2, .bar3 {
+    width: 26px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.change .bar2 {opacity: 0;}
+/*
+|--------------------------------------------------------------------------
+| Body
+|--------------------------------------------------------------------------
+*/
+#body {
+    background-color: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0px;
+}
+
+/*================ Intro ================*/
+#body #intro {
+    height: 100vh;
+    background-image: url('../image/1.JPG');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#intro .intro-text h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #400000;
+    font-family: "Poppins", sans-serif;
+    padding-left: 80px;
+}
+
+#intro .intro-text p {
+    font-size: 26px;
+    color: #400000;
+    font-family: "Poppins", sans-serif;
+    padding-left: 80px;
+    letter-spacing: 1px;
+}
+
+/*================ About ================*/
+#about .section-intro button {
+    background-color: #040B14;
+    border-radius: 20px;
+}
+
+#about .about-img img {
+    padding: 5px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+
+/*================ Facts ================*/
+#fact {
+
+}
+
+#fact i{
+    color: #149ddd;
+}
+
+/*================ Skill ================*/
+#skill {
+
+}
+
+#skill .skill-item {
+    padding-bottom: 15px;
+}
+
+
+#skill .progress {
+    height: 10px;
+    margin-top: 5px;
+}
+
+/*================ Resume ================*/
+#resume .resume-item .resume-item-box {
+    border-left: 2px solid #149ddd;
+    padding-left: 20px;
+    margin-left: 7px;
+}
+
+#resume i {
+    color: #149ddd;
+}
+
+/*================ Certification ================*/
+#certification .certification-item {
+    margin: 0px 10px 0px 10px;
+}
+
+#certification .certification-item img {
+    margin-right: 10px;
+    height: 200px;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    transition: all ease-in-out 0.3s;
+}
+
+.image-text {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFC000;
+}
+
+#certification .certification-item:hover img {
+    opacity: 0.5;
+    border: 1px solid #FFC000;
+}
+  
+#certification .certification-item:hover .image-text {
+    opacity: 1;
+}
+
+/*================ Portfolio ================*/
+#portfolio {
+    background-color: #F5F8FD;
+}
+
+#portfolio .portfolio-item img {
+    box-shadow: 0 3px 15px #5969f666;
+    height: 200px;
+    transition: all ease-in-out 0.3s;
+}
+
+.portfolio-links {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+}
+
+#portfolio  .portfolio-item:hover img {
+    opacity: 0.5;
+}
+  
+#portfolio .portfolio-item:hover .portfolio-links {
+    opacity: 1;
+}
+
+
+/*================ Services ================*/
+#service {
+
+}
+
+#service .service-item {
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: all ease-in-out 0.3s;
+}
+
+#service .service-item:hover {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.20);
+    transform: scale(1.01);
+}
+
+
+/*================ Testimonial ================*/
+#testimonial {
+    background-color: #F5F8FD;
+}
+
+#testimonial .testimonial-item {
+    padding: 15px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item i.fa-star, .fa-star-half {
+    color: #FFC000;
+}
+
+.testimonial-item p i.fas {
+    color: #A5A5A5;
+}
+
+/*================ Contact ================*/
+#contact .info {
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 35px;
+    transition: all ease-in-out 0.2s;
+}
+
+#contact .info i {
+    font-size: 20px;
+    color: #040B14;
+    width: 44px;
+    height: 44px;
+    background: #e6e6e6;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact .form {
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    height: 100%;
+    padding: 40px;
+    transition: all ease-in-out 0.2s;
+}
+
+
+#contact .info:hover, #contact .form:hover {
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.20);
+}
+
+#contact .info .address:hover i , #contact .info .mail:hover i,
+#contact .info .call:hover i {
+    background: #040B14;
+    color: #ffffff;
+}
+
+#contact .form input {
+    border: 1px solid #a6a6a6;
+    color: #040B14;
+    border-radius: 10px;
+}
+
+#contact .form input::placeholder { 
+    color: #040B14;
+    opacity: 1; 
+  }
+
+#contact .form .submit-btn {
+    background-color: #040B14;
+    border-radius: 20px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Footer
+|--------------------------------------------------------------------------
+*/
+#footer {
+    background-color: #040B14;
+    height: auto;
+    overflow: hidden;
+}
+/*
+|--------------------------------------------------------------------------
+| Certificate Page
+|--------------------------------------------------------------------------
+*/
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Responsive
+|--------------------------------------------------------------------------
+*/
+/*================ Extra small devices (portrait phones) ================*/
+  @media (max-width: 575.98px) {
+    #intro .intro-text h1 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 35px;
+        padding-left: 20px;
+    }
+
+    #intro .intro-text p {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    #fact .fact-item {
+        margin: 20px 0px 0px 70px;
+    }
+}
+
+/*================ Small devices (landscape phones) ================*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #intro .intro-text h1 {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 40px;
+        padding-left: 25px;
+    }
+
+    #intro .intro-text p {
+        font-size: 20px;
+        padding-left: 25px;
+    }
+
+    #fact .fact-item {
+        margin: 20px 0px 0px 110px;
+    }
+}
